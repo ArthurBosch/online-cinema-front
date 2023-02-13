@@ -7,6 +7,8 @@ import Slider from '@/components/ui/slider/Slider'
 
 import Meta from '@/utils/Meta/Meta'
 
+import { getApiUrl } from '@/config/api.config'
+
 import { IHome } from './home.interface'
 
 const Home: FC<IHome> = ({ slides, trendingMovies, actors }) => {
