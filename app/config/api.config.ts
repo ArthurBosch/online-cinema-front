@@ -4,11 +4,7 @@ export const API_URL = `${process.env.APP_URL}/api`
 export const API_SERVER_URL = `https://online-cinema.herokuapp.com/api`
 
 export const getApiUrl = () => {
-	if (IS_PRODUCTION) {
-		return API_SERVER_URL
-	} else {
-		return API_URL
-	}
+	return API_SERVER_URL
 }
 
 export const getAuthUrl = (string: string) => `/auth${string}`
