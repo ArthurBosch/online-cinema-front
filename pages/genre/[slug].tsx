@@ -28,6 +28,7 @@ const GenrePage: NextPage<IGenrePage> = ({ movies, genre }) => {
 export const getStaticPaths: GetStaticPaths = async () => {
 	try {
 		const res = await fetch(`${getApiUrl()}${getGernesUrl('')}`)
+		console.log(getApiUrl())
 		const genres: IGenre[] = await res.json()
 		const paths = genres?.map((g) => ({
 			params: {
