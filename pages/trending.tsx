@@ -5,7 +5,7 @@ import Catalog from '@/components/ui/catalog-movies/Catalog'
 
 import { getApiUrl, getMoviesUrl } from '@/config/api.config'
 
-const TrendingPage: NextPage<{ movies: IMovie[] }> = ({ movies }) => {
+const TrendingPage: NextPage<{ movies: IMovie[] | [] }> = ({ movies }) => {
 	return (
 		<Catalog
 			title="Trending now"

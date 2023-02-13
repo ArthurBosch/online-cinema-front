@@ -7,7 +7,7 @@ import { getApiUrl, getGernesUrl } from '@/config/api.config'
 
 import Error404 from './404'
 
-const GenresPage: NextPage<{ collections: ICollection[] }> = ({
+const GenresPage: NextPage<{ collections: ICollection[] | [] }> = ({
 	collections,
 }) => {
 	return collections ? (

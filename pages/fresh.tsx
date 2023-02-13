@@ -5,7 +5,7 @@ import Catalog from '@/components/ui/catalog-movies/Catalog'
 
 import { getApiUrl, getMoviesUrl } from '@/config/api.config'
 
-const FreshPage: NextPage<{ movies: IMovie[] }> = ({ movies }) => {
+const FreshPage: NextPage<{ movies: IMovie[] | [] }> = ({ movies }) => {
 	return (
 		<Catalog
 			movies={movies || []}
