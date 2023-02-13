@@ -21,6 +21,8 @@ const HomePage: NextPage<IHome> = ({ slides, trendingMovies, actors }) => {
 export const getStaticProps: GetStaticProps = async () => {
 	try {
 		const resMovies = await fetch(`${getApiUrl()}${getMoviesUrl('')}`)
+		console.log(getApiUrl())
+		console.log(getMoviesUrl(''))
 		const moviesSlider = await resMovies.json()
 
 		//@ts-ignore
