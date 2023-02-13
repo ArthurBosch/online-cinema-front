@@ -10,12 +10,12 @@ import { IS_PRODUCTION } from '@/config/constants'
 import { errorCatch, getContentType } from './api.helpers'
 
 export const axiosClassic = axios.create({
-	baseURL: IS_PRODUCTION ? API_SERVER_URL : API_URL,
+	baseURL: API_SERVER_URL,
 	headers: getContentType(),
 })
 
 export const instance = axios.create({
-	baseURL: API_URL,
+	baseURL: API_SERVER_URL,
 	headers: getContentType(),
 })
 
