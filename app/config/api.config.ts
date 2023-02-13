@@ -1,7 +1,7 @@
 import { IS_PRODUCTION } from './constants'
 
 export const API_URL = `${process.env.APP_URL}/api`
-export const API_SERVER_URL = `${process.env.APP_SERVER_URL}/api`
+export const API_SERVER_URL = `https://online-cinema.herokuapp.com/api`
 
 export const getApiUrl = () => {
 	if (IS_PRODUCTION) {
